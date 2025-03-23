@@ -24,10 +24,10 @@ Pod::Spec.new do |s|
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   #  When using multiple platforms
-  s.ios.deployment_target = "8.0"
-  s.osx.deployment_target = "10.10"
-  s.watchos.deployment_target = "2.0"
-  s.tvos.deployment_target = "9.0"
+  s.ios.deployment_target = "12.0"
+  s.osx.deployment_target = "10.14"
+  s.watchos.deployment_target = "5.0"
+  s.tvos.deployment_target = "12.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "OSRMTextInstructions"
 
-  s.dependency "MapboxDirections.swift", "~> 2.0"
+  s.dependency "MapboxDirections", "~> 2.0"
 
   s.prepare_command = "./json2plist.sh"
 
